@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Resumos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-start py-10">
+    <nav class="mb-6">
+        <a href="/ia" class="text-blue-600 hover:underline mr-4">Novo Resumo</a>
+        <a href="/historico" class="text-blue-600 hover:underline">Histórico</a>
+    </nav>
+
+    <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-2xl">
+        <h1 class="text-3xl font-bold text-center mb-6">Gerador de Resumos Inteligente</h1>
+        <form method="POST" class="space-y-4">
+            <div>
+                <label for="texto" class="block text-lg font-medium">Digite o texto:</label>
+                <textarea name="texto" id="texto" required class="w-full h-40 p-4 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-2xl text-lg font-semibold hover:bg-blue-700 transition">Gerar Resumo</button>
+        </form>
+    </div>
+</body>
+</html>
